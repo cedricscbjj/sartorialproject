@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+/*   font-family: "Cormorant Garamond", serif;
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+ /*     font-family: "Merriweather", serif;
+
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+ /*       font-family: "Raleway", sans-serif;
+
+
+ */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 538px) {
+    .container {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p, #imageDescription {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 538px) {
+    p, #imageDescription {
+        font-size: 13px;
+
+    }
+}
