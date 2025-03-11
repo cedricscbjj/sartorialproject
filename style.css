@@ -12,14 +12,23 @@
 
 
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/*         font-family: "Roboto Mono", monospace;
+
+
+
+ */
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f4f2f2;
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 1px;
     margin-bottom: 50px;
     text-align: center;
     margin-left: 100px;
@@ -33,7 +42,7 @@ body {
     }
 }
 
-img {
+#dailyImage{
     max-width: 70%;
     height: auto;
     border-radius: 10px;
@@ -44,7 +53,8 @@ p, #imageDescription {
     font-size: 18px;
     color: #333;
     margin-top: 10px;
-    font-style: italic;
+    font-family: "Roboto Mono", monospace;
+
 }
 
 @media screen and (max-width: 538px) {
@@ -52,4 +62,68 @@ p, #imageDescription {
         font-size: 13px;
 
     }
+}
+
+.texte{
+    background-color: rgb(175, 220, 243);
+
+}
+
+
+h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 60px;
+    background-color: rgb(175, 220, 243);
+
+   
+}
+h2{
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+}
+#sourceimage{
+    background-color: rgb(242, 161, 201);
+font-style: italic;
+}
+
+#logo{
+    cursor: pointer;
+
+  animation: float 2s infinite ease;
+}
+@keyframes float {
+0% {
+transform: translateY(0);
+-webkit-transform: translateY(0);
+}
+
+50% {
+transform: translateY(1rem);
+-webkit-transform: translateY(1rem);
+}
+
+100% {
+transform: translateY(0);
+-webkit-transform: translateY(0);
+}
+}
+
+
+#logo{
+  transform: translate(0, 10px) 
+  
+  
+  }
+  #logo:hover img{
+background-color: salmon;
+  }
+
+
+  @media screen and (max-width: 769px) {
+    #logo {
+        width: 80px;
+        height: 80px ;
+    }
+ 
+
 }
