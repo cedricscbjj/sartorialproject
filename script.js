@@ -67,7 +67,7 @@ const imagesData = [
 ];
 
 
-function getDailyImage() {
+/*function getDailyImage() {
     const today = new Date().toDateString(); // Récupérer la date sous forme de texte
     const storedData = localStorage.getItem("dailyImageData");
 
@@ -98,8 +98,39 @@ function getDailyImage() {
       document.getElementById("imageDescription").textContent = selectedImage.description;
       document.getElementById("sourceimage").textContent = selectedImage.source;
 
-  }
-  
+  }*/
+      function getDailyImage() {
+        const now = new Date();
+        const storedData = localStorage.getItem("dailyImageData");
+    
+        if (storedData) {
+            const parsedData = JSON.parse(storedData);
+            const lastUpdate = new Date(parsedData.timestamp);
+            const hoursDifference = Math.abs(now - lastUpdate) / 36e5; // Convert milliseconds to hours
+    
+            if (hoursDifference < 2) {
+                document.getElementById("dailyImage").src = parsedData.image;
+                document.getElementById("imageDescription").textContent = parsedData.description;
+                document.getElementById("sourceimage").textContent = parsedData.source;
+                return;
+            }
+        }
+    
+        const randomIndex = Math.floor(Math.random() * imagesData.length);
+        const selectedImage = imagesData[randomIndex];
+    
+        // Sauvegarde dans localStorage
+        localStorage.setItem("dailyImageData", JSON.stringify({
+            timestamp: now,
+            image: selectedImage.url,
+            description: selectedImage.description,
+            source: selectedImage.source
+        }));   
+        
+        document.getElementById("dailyImage").src = selectedImage.url;
+        document.getElementById("imageDescription").textContent = selectedImage.description;
+        document.getElementById("sourceimage").textContent = selectedImage.source;
+    }
   // Exécution au chargement de la page
   window.onload = getDailyImage;
 
