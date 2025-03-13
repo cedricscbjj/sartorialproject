@@ -1,14 +1,14 @@
 
 
 const imagesData = [
-    { url: "image1.jpeg", description: "Les gens sont souvent tristes et ça se voit ...", source: "Source photo" },
+    { url: "image1.jpeg", description: "Les gens sont souvent tristes et ca se voit sur leurs tenues. Ca broie du noir. Ca se cache derriere du bleu marine (meme si c’est beau ca reste du zero prise de risque) que ce soit en été ou en hiver les gens ont peur de la couleur comme si ils avaient peur d’exister. Dans la vie il faut s’affirmer. Pourquoi toujours attendre l’approbation des autres pour acheter de belles choses, c’est les autres qui tiennent votre porte monnaie ??", source: "Source photo" },
     { url: "image2.PNG", description: "Violet", source: "Source photo" },
     { url: "image3.PNG", description: "Partons du principe que si vous fuyez ces couleurs...", source: "Source photo" },
     { url: "image4.jpg", description: "Parmi les influenceurs dit sartorial il y’en a...", source: "Source photo : Vinted" },
     { url: "image5.jpeg", description: "Akamine Yukio envoie une balle virtuelle a travers...", source: "Source photo : Drake’s Instagram Account" },
     { url: "image6.jpg", description: "Un magnifique blazer inspiré des années 70.", source: "Source photo : Ralph Lauren" },
     { url: "image7.PNG", description: "Les vestes croisées donnent souvent une allure...", source: "Source photo : Pitti Uomo" },
-    { url: "image8.jpeg", description: "Voici un exemple de tailoring italien moderne.", source: "Source photo : Ring Jacket" },
+    { url: "image8.jpeg", description: "Tres Jolie veste Mulish croisé avec un pattern tres particulier qui donne a son proprietaire certainement le nom d’oiseau rare", source: "Source photo : Ring Jacket" },
     { url: "image9.jpg", description: "La mode masculine évolue avec le temps.", source: "Source photo : Lookbook Drake’s" },
     { url: "image10.jpg", description: "Un homme élégant marche dans les rues de Milan.", source: "Source photo : Sartorialist" },
     { url: "image11.JPG", description: "L’importance du choix des matières en hiver.", source: "Source photo : Permanent Style" },
@@ -61,9 +61,9 @@ const imagesData = [
     { url: "image58.jpg", description: "Les meilleures coupes de jeans pour un look intemporel.", source: "Source photo : Levi’s Vintage Clothing" },
     { url: "image59.jpg", description: "Pourquoi le trench-coat reste une pièce essentielle.", source: "Source photo : Aquascutum" },
     { url: "image60.jpg", description: "Comment choisir des boutons en corne pour ses vestes.", source: "Source photo : Benson & Clegg" },
-    { url: "image61.jpg", description: "Les raisons du retour du pantalon plissé.", source: "Source photo : Rota Pantaloni" },
-    { url: "image62.jpg", description: "Pourquoi la veste en daim est une pièce intemporelle.", source: "Source photo : Valstar" }
-
+    { url: "image61.jpg", description: "il a un petit air de Macron vous ne trouvez pas ? Et pourtant vous ne verrez jamais Macron fagoté de la sorte. Les politiciens francais sont pour la plupart claqué niveau vestimentaire, rares sont les phenix du style.", source: "Source photo : Rota Pantaloni" },
+    { url: "image62.jpg", description: " Un costume en tweed vintage à 50€ + 30€ de retouches vs. une paire de Nike à 250€, qui est le plus accessible    Un blazer en laine de qualité qui dure 15 ans vs. un hoodie à 150€ qui bouloche après un an, quel est le vrai investissement malin", source: "Source photo : Valstar" },
+    { url: "image63.jpg", description: " Un costume en tweed vintage à 50€ + 30€ de retouches vs. une paire de Nike à 250€, qui est le plus accessible    Un blazer en laine de qualité qui dure 15 ans vs. un hoodie à 150€ qui bouloche après un an, quel est le vrai investissement malin", source: "Source photo : Valstar" }
 ];
 
 
@@ -102,3 +102,16 @@ function getDailyImage() {
   
   // Exécution au chargement de la page
   window.onload = getDailyImage;
+
+
+
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+
+function hello() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+}

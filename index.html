@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="titremodal"></p>
+            <p id="modalMessage">Bienvenue, cher internaute.
 
-    <div id="logo" class="position-fixed" ><img src="myhead.png" alt="memyselfandI" width="100" height="100"></div>
+                Ici, tu ne trouveras pas un guide pour maîtriser l’art sartorial, mais plutôt une source d’inspiration esthétique et un manifeste quotidien dédié à l’élégance classique masculine.
+                
+                Passionné de sartorialisme depuis plus d’une dizaine d’années, j’ai découvert cet univers par hasard, à travers le prisme du dandysme et des figures littéraires telles que Dorian Gray, Lord Brummell ou encore Lord Byron…</a></p>
+        </div>
+    </div>
+    <div id="logo" class="position-fixed" onclick="hello()" ><img src="myhead.png" alt="memyselfandI" width="100" height="100"></div>
 
     <div class="container">
 
@@ -20,12 +30,8 @@
 
             <img id="dailyImage" src="" alt="Image du jour">
         <div class="texte">
-        <p id="imageDescription">Pour un site web de mode masculine orienté sur l’art sartorial traditionnel, avec un public cultivé et amateur d’élégance intemporelle, il faut une typographie qui évoque le raffinement classique tout en restant adaptée au web.
-
-            Voici mes recommandations sur Google Fonts :
-            1. Pour les titres (avec du caractère et une touche classique) :
-            "Playfair Display" – Une police serif élégante avec une touche classique rappelant les anciennes presses typographiques.</p>
-            <p id="sourceimage"> 1. Pour les titres (avec du caractère et une touche classique) </p>
+        <p id="imageDescription"></p>
+            <p id="sourceimage">  </p>
         </div>
 
         </div>

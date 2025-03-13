@@ -137,3 +137,20 @@ background-color: salmon;
  
 
 }
+
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border: 9px solid #87afd0;
+    width: 80%; 
+    max-width: 700px; 
+    margin-top: 10%; 
+    color:beige;
+  }
+
+  .close{
+    color: #f3a3f0;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
