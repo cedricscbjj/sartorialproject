@@ -28,14 +28,14 @@ body {
 }
 
 .container {
-    margin-top: 1px;
+    margin-top: 40px;
     margin-bottom: 50px;
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 190px;
+  
 }
 
-@media screen and (max-width: 538px) {
+@media screen and (max-width: 828px) {
     .container {
         margin-left: 1px;
         margin-right: 1px;
@@ -77,9 +77,19 @@ h1{
 
    
 }
+@media screen and (max-width: 769px) {
+    h1 {
+        font-size: 40px;
+
+    }
+ 
+
+}
+
+
 h2{
     font-family: "Merriweather", serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 #sourceimage{
     background-color: rgb(242, 161, 201);
@@ -121,8 +131,8 @@ background-color: salmon;
 
   @media screen and (max-width: 769px) {
     #logo {
-        width: 80px;
-        height: 80px ;
+        width: 70px;
+        height: 70px ;
     }
  
 
