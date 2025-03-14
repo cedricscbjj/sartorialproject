@@ -124,7 +124,7 @@ transform: translateY(0);
   
   
   }
-  #logo:hover img{
+  #logo:hover{
 background-color: rgb(232, 148, 184);
   }
 
