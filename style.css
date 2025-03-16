@@ -140,6 +140,17 @@ background-color: rgb(232, 148, 184);
 
 }
 
+@media screen and (max-width: 469px) {
+    #logo {
+        position: relative;
+        width: 50px;
+        height: 50px ;
+        top: 180px;
+    }
+ 
+
+}
+
 .modal-content {
     margin: auto;
     padding: 20px;
@@ -148,8 +159,11 @@ background-color: rgb(232, 148, 184);
     max-width: 700px; 
     margin-top: 10%; 
     color:beige;
+    max-height: 70vh;
     overflow-y: auto; /* Ajoute une scrollbar verticale si le contenu dépasse */
     scrollbar-width: thin;
+    overflow-x: hidden;
+    scrollbar-color: #f3a3f0;
   }
 
   .close{
@@ -157,4 +171,13 @@ background-color: rgb(232, 148, 184);
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+  }
+
+  .classement{
+  }
+
+  #titremodal{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    color:#f3a3f0;
   }
