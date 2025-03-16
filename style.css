@@ -131,8 +131,10 @@ background-color: rgb(232, 148, 184);
 
   @media screen and (max-width: 769px) {
     #logo {
+        position: relative;
         width: 70px;
         height: 70px ;
+        top: 180px;
     }
  
 
@@ -146,6 +148,8 @@ background-color: rgb(232, 148, 184);
     max-width: 700px; 
     margin-top: 10%; 
     color:beige;
+    overflow-y: auto; /* Ajoute une scrollbar verticale si le contenu dépasse */
+    scrollbar-width: thin;
   }
 
   .close{
