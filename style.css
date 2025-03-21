@@ -193,3 +193,11 @@ background-color: rgb(232, 148, 184);
 
 
  
+#likeContainer img {
+    transition: transform 0.2s ease;
+}
+
+#likeContainer img:active {
+    transform: translateY(-10px); /* Fait monter l'image */
+    background-color: #f3a3f0;
+}
